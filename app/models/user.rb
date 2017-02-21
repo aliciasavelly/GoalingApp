@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   validates :username, uniqueness: true
   after_initialize :ensure_session_token
 
+  has_many :goals
+
   attr_reader :password
 
   def password=(password)

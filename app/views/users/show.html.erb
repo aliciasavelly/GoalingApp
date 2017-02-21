@@ -1,0 +1,6 @@
+<h2>Goals</h2>
+
+<% @user.goals.each do |goal| %>
+  <h3><%= goal.title %></h3>
+  <p><%= goal.description %></p>
+<% end %>
